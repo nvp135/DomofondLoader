@@ -10,6 +10,10 @@ if __name__ == '__main__':
 
   cities.append(City('[{"id": 69,"name": "Калининградская область","areaType": "Region","hasMetros": false,"hasDistricts": false,"HasRoads": false},{"id": 2919,"name": "Калининград","areaType": "City","hasMetros": false,"hasDistricts": false,"HasRoads": false}]', 'Kaliningrad'))
 
+  cities.append(City('[{"id": 3584,"name": "Москва","areaType": "City","hasMetros": true,"hasDistricts": false,"HasRoads": false}]', "Moscow"))
+
+  cities.append(City('[{"id": 34,"name": "Якутия","areaType": "Region","hasMetros": false,"hasDistricts": false,"HasRoads": false},{"id": 1268,"name": "Нерюнгри","areaType": "City","hasMetros": false,"hasDistricts": false,"HasRoads": false},{"id": 1257,"name": "Чульман","areaType": "City","hasMetros": false,"hasDistricts": false,"HasRoads": false}]', 'Neryungri'))
+
   for city in cities:
     loader = CityLoader(city)
     loader.load()

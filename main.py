@@ -19,7 +19,8 @@ if __name__ == '__main__':
     loader.load()
     df = pd.DataFrame(loader.items)
     df.to_csv(f'\\\\192.168.10.1\\Flash128Gb\\Realty\\Domofond\\{datetime.today().strftime("%Y-%m-%d")} {city.name}.csv')
-    print('OK')
+  
+  print('OK')
 
 
 
